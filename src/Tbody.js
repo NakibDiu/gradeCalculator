@@ -16,8 +16,8 @@ const Tbody = (props) => {
                 Array.from({length: rowLimit}, (_,k) => (
                     <tr className = "list">
                         <td className = "tableText">Course {k + 1}</td>
-                        <td ><input type = "number" className = "creditInput" placeholder = "0" step = "1" onInput = {handleCredit}/></td>
-                        <td ><input type = "number" className = "gradeInput"  placeholder = "0" step = "0.01" min = "1" max = "4" onInput = {handleGrade} /></td>
+                        <td className = "tableText"><input type = "number" className = "creditInput" placeholder = "Enter Credit Hours" step = "1" onInput = {handleCredit}/></td>
+                        <td className = "tableText"><input type = "number" className = "gradeInput"  placeholder = "Enter Your Grade" step = "0.01" min = "1" max = "4" onInput = {handleGrade} /></td>
                     </tr>
                 ))
             }

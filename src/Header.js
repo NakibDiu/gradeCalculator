@@ -3,8 +3,10 @@ import './App.css'
 
 const Header = () => {
     return (
-        <div className = "nav">
-            <h1 className = "greetings">Welcome</h1>
+        <div>
+            <div className = "nav">
+                <h1 className = "greetings">Welcome</h1>
+            </div>
         </div>
     ) 
 }

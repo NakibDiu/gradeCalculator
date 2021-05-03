@@ -20,8 +20,11 @@ const Main = () => {
                     <form className = "form1">
                         <label className= "label">Number of Courses : </label>
                         <input type = "number" className = "input" min = "1" max = "10" placeholder = "0" />
-                        <input type= "button" value = "Submit" className = "button" onClick = {handleClick}/>
+                        
                     </form>
+                    <div>
+                        <input type= "button" value = "Submit" className = "button" onClick = {handleClick}/>
+                    </div>
                 </div>
             </div>
             <div className = "listContainer">

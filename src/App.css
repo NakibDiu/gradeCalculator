@@ -1,9 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .nav{
     margin: 0;
     height: 260px;
@@ -12,7 +7,7 @@
     align-items: center;
     background: rgb(43,88,118);
     background: linear-gradient(45deg, rgba(43,88,118,1) 0%, rgba(78,67,118,1) 100%);
-    min-width: 100%;
+    width: 100%;
 }
 .greetings{
     color: white;
@@ -20,21 +15,26 @@
     font-weight: 400;
 }
 .main{
-    /* border: 2px solid black; */
     margin: 16px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+.container{
+    padding: 16px 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.container{
-    padding: 16px;
-    width: min(1080px, 85%);
-}
 .form1{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 16px;
+    width: 80%;
 }
 .label{
     font-size: 30px;
@@ -42,11 +42,12 @@
 .input{
     width: 30%;
     padding: 8px;
-    margin: 0 36px;
+    margin-left: 36px;
     border-radius: 5px;
     color: rgb(5, 5, 32);
     border-color: rgb(0,4,40);
     font-size: 18px;
+    border: 3px solid black;
 }
 .button{
     padding: 8px;
@@ -73,4 +74,22 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(134, 133, 131);
+}
+
+@media screen and (max-width: 600px) {
+    .greetings{
+        font-size: 50px;
+    }
+    .nav{
+        width: 100%;
+    }
+    .form1{
+        width: 100%;
+    }
+    .label{
+        font-size: 18px;
+    }
+    .input{
+        width: 50%;
+    }
 }
